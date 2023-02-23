@@ -8,7 +8,7 @@ btn.addEventListener("click", function () {
 
   convertUpper(arr);
   convertLower(arr);
-  convertAlternate(arr);
+  // convertAlternate(arr);
   convertCamel(arr);
   convertPascal(arr);
   convertSnake(arr);
@@ -38,31 +38,31 @@ function convertLower(arr) {
 }
 
 // Converts into Alternate case
-function convertAlternate(arr) {
-  let alternateText = "";
+// function convertAlternate(arr) {
+//   let alternateText = "";
 
-  // console.log(arr[0][0].toUpperCase());
-  // console.log(arr[0][1]);
-  // console.log(arr[0][2]);
-  // console.log(arr[0][3]);
-  // console.log(arr[0][4]);
-  // console.log(arr[0][5]);
+//   // console.log(arr[0][0].toUpperCase());
+//   // console.log(arr[0][1]);
+//   // console.log(arr[0][2]);
+//   // console.log(arr[0][3]);
+//   // console.log(arr[0][4]);
+//   // console.log(arr[0][5]);
 
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].toLowerCase();
-    let j;
-    for (j = 1; j < arr[i].length; j = j + 2) {
-      arr[i][j] = arr[i][j].toUpperCase();
-      console.log(arr[i][j].toUpperCase());
-    }
-    alternateText = alternateText + arr[i];
-    console.log(alternateText);
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i].toLowerCase();
+//     let j;
+//     for (j = 1; j < arr[i].length; j = j + 2) {
+//       arr[i][j] = arr[i][j].toUpperCase();
+//       console.log(arr[i][j].toUpperCase());
+//     }
+//     alternateText = alternateText + arr[i];
+//     console.log(alternateText);
+//   }
 
-  document.getElementById("alternate").textContent = alternateText;
+//   document.getElementById("alternate").textContent = alternateText;
 
-  console.log(alternateText);
-}
+//   console.log(alternateText);
+// }
 
 // Converts into Camel case
 function convertCamel(arr) {
